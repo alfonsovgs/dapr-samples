@@ -1,0 +1,16 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: chapter03
+extensions:
+  -name: dapr
+  log-level: debug
+  components-path: "./components/redis-state.yaml"
+services:
+  - name: order-service
+    project: sample.microservice.order/sample.microservice.order.csproj
+  - name: reservation-service
+    project: sample.microservice.reservation/sample.microservice.reservation.csproj
