@@ -9,4 +9,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\sample.microservice.dto.order\sample.microservice.dto.order.csproj" />
+    <ProjectReference Include="..\sample.microservice.dto.reservation\sample.microservice.dto.reservation.csproj" />
+  </ItemGroup>
+
 </Project>
